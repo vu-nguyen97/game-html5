@@ -1,0 +1,344 @@
+.Home {
+  .gameGrid {
+    grid-template-rows: repeat(auto-fill, 94px);
+    grid-template-columns: repeat(17, 94px);
+    grid-template-areas:
+      "l l g0 g0 g0 . . . . . . . . g7 g7 g8 g8"
+      ". . g0 g0 g0 g4 g4 g5 g5 g2 g2 g2 . g7 g7 g8 g8"
+      ". . g0 g0 g0 g4 g4 g5 g5 g2 g2 g2 g6 g6 g3 g3 g3"
+      "g9 g9 g10 g10 g11 g11 g1 g1 g1 g2 g2 g2 g6 g6 g3 g3 g3"
+      "g9 g9 g10 g10 g11 g11 g1 g1 g1 g12 g12 g13 g13 . g3 g3 g3"
+      ". g14 g14 g15 g15 . g1 g1 g1 g12 g12 g13 g13 g16 g16 g17 g17"
+      ". g14 g14 g15 g15 . g18 g18 g19 g19 g20 g20 . g16 g16 g17 g17"
+      ". . . . . . g18 g18 g19 g19 g20 g20 . . . . ."
+      ". . . . . . . . . . . . . . . . ."
+      "g22 g22 . . . . . . . . g21 g21 g21 . . . ."
+      "g22 g22 . . . . g24 g24 . . g21 g21 g21 . . . ."
+      ". . g23 g23 . . g24 g24 . . g21 g21 g21 . . . ."
+      ". . g23 g23 . . . . . . . . . . . g25 g25"
+      ". . . . . . . . . . . . . . . g25 g25";
+  }
+
+  .game0 {
+    grid-area: g0;
+  }
+  .game1 {
+    grid-area: g1;
+  }
+  .game2 {
+    grid-area: g2;
+  }
+  .game3 {
+    grid-area: g3;
+  }
+  .game4 {
+    grid-area: g4;
+  }
+  .game5 {
+    grid-area: g5;
+  }
+  .game6 {
+    grid-area: g6;
+  }
+  .game7 {
+    grid-area: g7;
+  }
+  .game8 {
+    grid-area: g8;
+  }
+  .game9 {
+    grid-area: g9;
+  }
+  .game10 {
+    grid-area: g10;
+  }
+  .game11 {
+    grid-area: g11;
+  }
+  .game12 {
+    grid-area: g12;
+  }
+  .game13 {
+    grid-area: g13;
+  }
+  .game14 {
+    grid-area: g14;
+  }
+  .game15 {
+    grid-area: g15;
+  }
+  .game16 {
+    grid-area: g16;
+  }
+  .game17 {
+    grid-area: g17;
+  }
+  .game18 {
+    grid-area: g18;
+  }
+  .game19 {
+    grid-area: g19;
+  }
+  .game20 {
+    grid-area: g20;
+  }
+  .game21 {
+    grid-area: g21;
+  }
+  .game22 {
+    grid-area: g22;
+  }
+  .game23 {
+    grid-area: g23;
+  }
+  .game24 {
+    grid-area: g24;
+  }
+  .game25 {
+    grid-area: g25;
+  }
+
+  .CategoriesGrid {
+    grid-template-columns: repeat(17, 94px);
+    grid-auto-rows: 94px;
+  }
+
+  @media (max-width: 640px) {
+    .CategoriesGrid {
+      grid-template-columns: repeat(3, 94px);
+    }
+    .gameGrid {
+      grid-template-columns: repeat(3, 94px);
+      grid-template-areas:
+        ". g0 g0"
+        ". g0 g0"
+        ". . . "
+        "g1 g1 ."
+        "g1 g1 ."
+        ". . . "
+        ". g2 g2 "
+        ". g2 g2 "
+        ". . ."
+        "g3 g3 ."
+        "g3 g3 ."
+        ". . .";
+    }
+    .game4,
+    .game5,
+    .game6,
+    .game7,
+    .game8,
+    .game9,
+    .game10,
+    .game11,
+    .game12,
+    .game13,
+    .game14,
+    .game15,
+    .game16,
+    .game17,
+    .game18,
+    .game19,
+    .game20,
+    .game21,
+    .game22,
+    .game23,
+    .game24,
+    .game25 {
+      grid-area: auto;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 880px) {
+    .CategoriesGrid {
+      grid-template-columns: repeat(5, 94px);
+    }
+    .gameGrid {
+      grid-template-columns: repeat(5, 94px);
+      grid-template-areas:
+        ". . g0 g0 ."
+        "g1 g1 g0 g0 ."
+        "g1 g1 . . ."
+        "g2 g2 g2 . ."
+        "g2 g2 g2 g3 g3"
+        "g2 g2 g2 g3 g3"
+        ". . g4 g4 ."
+        ". . g4 g4 ."
+        "g5 g5 g6 g6 g6"
+        "g5 g5 g6 g6 g6"
+        ". . g6 g6 g6";
+    }
+    .game7,
+    .game8,
+    .game9,
+    .game10,
+    .game11,
+    .game12,
+    .game13,
+    .game14,
+    .game15,
+    .game16,
+    .game17,
+    .game18,
+    .game19,
+    .game20,
+    .game21,
+    .game22,
+    .game23,
+    .game24,
+    .game25 {
+      grid-area: auto;
+    }
+  }
+
+  @media (min-width: 880px) and (max-width: 1260px) {
+    .CategoriesGrid {
+      grid-template-columns: repeat(8, 94px);
+    }
+    .gameGrid {
+      grid-template-columns: repeat(8, 94px);
+      grid-template-areas:
+        ". g0 g0 . . . . ."
+        ". g0 g0 g1 g1 g1 g2 g2"
+        "g3 g3 . g1 g1 g1 g2 g2"
+        "g3 g3 . g1 g1 g1 g4 g4"
+        "g5 g5 g5 g6 g6 g6 g4 g4"
+        "g5 g5 g5 g6 g6 g6 g7 g7"
+        "g5 g5 g5 g6 g6 g6 g7 g7"
+        "g8 g8 g9 g9 g10 g10 . ."
+        "g8 g8 g9 g9 g10 g10 . .";
+    }
+    .game11,
+    .game12,
+    .game13,
+    .game14,
+    .game15,
+    .game16,
+    .game17,
+    .game18,
+    .game19,
+    .game20,
+    .game21,
+    .game22,
+    .game23,
+    .game24,
+    .game25 {
+      grid-area: auto;
+    }
+  }
+
+  @media (min-width: 1260px) and (max-width: 1420px) {
+    .CategoriesGrid {
+      grid-template-columns: repeat(11, 94px);
+    }
+    .gameGrid {
+      grid-template-columns: repeat(11, 94px);
+      grid-template-areas:
+        "l l g0 g0 g0 g3 g3 g4 g4 g5 g5"
+        "g2 g2 g0 g0 g0 g3 g3 g4 g4 g5 g5"
+        "g2 g2 g0 g0 g0 g1 g1 g1 . g6 g6"
+        ". . . . . g1 g1 g1 . g6 g6"
+        ". g7 g7 g8 g8 g1 g1 g1 . g9 g9"
+        ". g7 g7 g8 g8 . . . . g9 g9"
+        ". . . . . . . . . . ."
+        ". . . . . . g10 g10 g10 . ."
+        "g11 g11 . . . . g10 g10 g10 . ."
+        "g11 g11 g12 g12 . . g10 g10 g10 . ."
+        ". . g12 g12 . . . . . . ."
+        ". . . . . . . . . . ."
+        ". . . g13 g13 g13 . . . . ."
+        ". . . g13 g13 g13 . g14 g14 . ."
+        ". . . g13 g13 g13 . g14 g14 . ."
+        ". . . . . . . . . . ."
+        ". g15 g15 . . . . . . g16 g16"
+        ". g15 g15 g17 g17 . . . . g16 g16"
+        ". . . g17 g17 . . . . . .";
+    }
+    .game18,
+    .game19,
+    .game20,
+    .game21,
+    .game22,
+    .game23,
+    .game24,
+    .game25 {
+      grid-area: auto;
+    }
+  }
+
+  @media (min-width: 1420px) and (max-width: 1620px) {
+    .CategoriesGrid {
+      grid-template-columns: repeat(12, 94px);
+    }
+    .gameGrid {
+      grid-template-columns: repeat(12, 94px);
+      grid-template-areas:
+        "l l g0 g0 g0 g3 g3 g4 g4 g5 g5"
+        "g2 g2 g0 g0 g0 g3 g3 g4 g4 g5 g5"
+        "g2 g2 g0 g0 g0 g1 g1 g1 . g6 g6"
+        ". . . . . g1 g1 g1 . g6 g6"
+        ". g7 g7 g8 g8 g1 g1 g1 . g9 g9"
+        ". g7 g7 g8 g8 . . . . g9 g9"
+        ". . . . . . . . . . ."
+        ". . . . . . g10 g10 g10 . ."
+        "g11 g11 . . . . g10 g10 g10 . ."
+        "g11 g11 g12 g12 . . g10 g10 g10 . ."
+        ". . g12 g12 . . . . . . ."
+        ". . . . . . . . . . ."
+        ". . . g13 g13 g13 . . . . ."
+        ". . . g13 g13 g13 . g14 g14 . ."
+        ". . . g13 g13 g13 . g14 g14 . ."
+        ". . . . . . . . . . ."
+        ". g15 g15 . . . . . . g16 g16"
+        ". g15 g15 g17 g17 . . . . g16 g16"
+        ". . . g17 g17 . . . . . .";
+    }
+    .game18,
+    .game19,
+    .game20,
+    .game21,
+    .game22,
+    .game23,
+    .game24,
+    .game25 {
+      grid-area: auto;
+    }
+  }
+
+  @media (min-width: 1620px) and (max-width: 1919px) {
+    .CategoriesGrid {
+      grid-template-columns: repeat(14, 94px);
+    }
+    .gameGrid {
+      grid-template-columns: repeat(14, 94px);
+      grid-template-areas:
+        "l l g0 g0 g0 g4 g4 . . . . . g5 g5"
+        ". . g0 g0 g0 g4 g4 . g2 g2 g2 . g5 g5"
+        "g3 g3 g0 g0 g0 . . . g2 g2 g2 . g6 g6"
+        "g3 g3 . . . g1 g1 g1 g2 g2 g2 . g6 g6"
+        "g7 g7 . g8 g8 g1 g1 g1 g9 g9 g10 g10 . ."
+        "g7 g7 . g8 g8 g1 g1 g1 g9 g9 g10 g10 . ."
+        ". . . . . . . . . . . . . ."
+        ". . . . . . . . g11 g11 g11 . . ."
+        "g12 g12 . . . . . . g11 g11 g11 . . ."
+        "g12 g12 . . . . . . g11 g11 g11 . . ."
+        ". . g13 g13 . . . . . . . . . ."
+        ". . g13 g13 . . . . . . . . . ."
+        ". . . . . . g14 g14 . . . g15 g15 g15"
+        "g16 g16 . . . . g14 g14 . . . g15 g15 g15"
+        "g16 g16 . . . . . . . . . g15 g15 g15";
+    }
+    .game16,
+    .game17,
+    .game18,
+    .game19,
+    .game20,
+    .game21,
+    .game22,
+    .game23,
+    .game24,
+    .game25 {
+      grid-area: auto;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.SearchGame {
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+}
+
+.custom-bg .ant-drawer-body {
+  background-image: linear-gradient(to bottom, #a4ffee, #83ffe7);
+  @apply py-8;
+}
+
+.custom-lg-input .ant-input-clear-icon {
+  @apply -mt-[8px] text-xl;
+}
+
+.custom-lg-input input {
+  @apply !pl-1.5;
+}
+
+.custom-lg-input {
+  @apply !border-0;
+}

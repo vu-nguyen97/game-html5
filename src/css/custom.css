@@ -1,0 +1,10 @@
+.ant-btn:has(.anticon.custom-btn-padding) {
+  @apply pl-2.5;
+}
+span.anticon.custom-btn-padding + span {
+  @apply ml-px;
+}
+
+.custom-tooltip .ant-tooltip-inner {
+  @apply !text-xs2 !min-h-[29px];
+}

@@ -1,0 +1,24 @@
+.GamesByCategory {
+  .ResponsiveGrid {
+    grid-template-columns: repeat(17, 94px);
+
+    @media (min-width: 1620px) and (max-width: 1919px) {
+      grid-template-columns: repeat(14, 94px);
+    }
+    @media (min-width: 1420px) and (max-width: 1620px) {
+      grid-template-columns: repeat(12, 94px);
+    }
+    @media (min-width: 1260px) and (max-width: 1420px) {
+      grid-template-columns: repeat(11, 94px);
+    }
+    @media (min-width: 880px) and (max-width: 1260px) {
+      grid-template-columns: repeat(8, 94px);
+    }
+    @media (min-width: 640px) and (max-width: 880px) {
+      grid-template-columns: repeat(5, 94px);
+    }
+    @media (max-width: 640px) {
+      grid-template-columns: repeat(3, 94px);
+    }
+  }
+}

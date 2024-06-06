@@ -1,0 +1,205 @@
+.GamePlay {
+  .game0 {
+    grid-area: g0;
+  }
+  .game1 {
+    grid-area: g1;
+  }
+  .a0 {
+    grid-area: a0;
+  }
+  .a1 {
+    grid-area: a1;
+  }
+  .a2 {
+    grid-area: a2;
+  }
+
+  .GameDescription {
+    grid-area: d;
+  }
+
+  .GamePlayWrapper {
+    grid-area: g;
+  }
+
+  .verticalText {
+    writing-mode: vertical-lr;
+  }
+
+  .GameplayGrid {
+    grid-template-columns: repeat(17, 94px);
+    grid-template-rows: repeat(9, 94px);
+    grid-template-areas:
+      ". . g g g g g g g g g g g0 g0 a0 a0 a0"
+      "a1 a1 g g g g g g g g g g g0 g0 a0 a0 a0"
+      "a1 a1 g g g g g g g g g g g1 g1 a0 a0 a0"
+      "a1 a1 g g g g g g g g g g g1 g1 . . ."
+      "a1 a1 g g g g g g g g g g . . . . ."
+      "a1 a1 g g g g g g g g g g . . . . ."
+      "a1 a1 . . . a2 a2 a2 a2 a2 a2 a2 . . . . ."
+      ". . d d d d d d d d d d . . . . ."
+      ". . d d d d d d d d d d . . . . ."
+      ". . d d d d d d d d d d . . . . ."
+      ". . . . . . . . . . . . . . . . ."
+      ". . . . . . . . . . . . . . . . .";
+  }
+
+  @media (min-width: 1670px) and (max-width: 1919px) {
+    .GameplayGrid {
+      grid-template-columns: repeat(15, 94px);
+      grid-template-areas:
+        ". . g g g g g g g g g g a0 a0 a0"
+        "a1 a1 g g g g g g g g g g a0 a0 a0"
+        "a1 a1 g g g g g g g g g g a0 a0 a0"
+        "a1 a1 g g g g g g g g g g g0 g0 ."
+        "a1 a1 g g g g g g g g g g g0 g0 ."
+        "a1 a1 g g g g g g g g g g . g1 g1"
+        "a1 a1 . . . a2 a2 a2 a2 a2 a2 a2 . . ."
+        ". . d d d d d d d d d d . . ."
+        ". . d d d d d d d d d d . . ."
+        ". . d d d d d d d d d d . . ."
+        ". . . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . . .";
+    }
+  }
+  @media (min-width: 1550px) and (max-width: 1670px) {
+    .GameplayGrid {
+      grid-template-columns: repeat(14, 94px);
+      grid-template-areas:
+        ". . g g g g g g g g g g a0 a0"
+        "a1 a1 g g g g g g g g g g a0 a0"
+        "a1 a1 g g g g g g g g g g a0 a0"
+        "a1 a1 g g g g g g g g g g g0 g0"
+        "a1 a1 g g g g g g g g g g g0 g0"
+        "a1 a1 g g g g g g g g g g . ."
+        "a1 a1 . . . a2 a2 a2 a2 a2 a2 a2 . ."
+        ". . d d d d d d d d d d . ."
+        ". . d d d d d d d d d d . ."
+        ". . d d d d d d d d d d . ."
+        ". . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . .";
+    }
+    .game1 {
+      grid-area: auto;
+    }
+  }
+  @media (min-width: 1440px) and (max-width: 1550px) {
+    .GameplayGrid {
+      grid-template-columns: repeat(13, 94px);
+      grid-template-areas:
+        "a1 g g g g g g g g g g . ."
+        "a1 g g g g g g g g g g a0 a0"
+        "a1 g g g g g g g g g g a0 a0"
+        "a1 g g g g g g g g g g a0 a0"
+        "a1 g g g g g g g g g g g0 g0"
+        "a1 g g g g g g g g g g g0 g0"
+        ". . . . a2 a2 a2 a2 a2 a2 a2 . ."
+        ". d d d d d d d d d d . ."
+        ". d d d d d d d d d d . ."
+        ". d d d d d d d d d d . ."
+        ". . . . . . . . . . . . ."
+        ". . . . . . . . . . . . .";
+    }
+    .game1 {
+      grid-area: auto;
+    }
+  }
+  @media (min-width: 1330px) and (max-width: 1440px) {
+    .GameplayGrid {
+      grid-template-columns: repeat(12, 94px);
+      grid-template-areas:
+        "g g g g g g g g g g . ."
+        "g g g g g g g g g g a0 a0"
+        "g g g g g g g g g g a0 a0"
+        "g g g g g g g g g g a0 a0"
+        "g g g g g g g g g g g0 g0"
+        "g g g g g g g g g g g0 g0"
+        ". . . a2 a2 a2 a2 a2 a2 a2 . ."
+        "d d d d d d d d d d . ."
+        "d d d d d d d d d d . ."
+        "d d d d d d d d d d . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . .";
+    }
+    .a1,
+    .game1 {
+      grid-area: auto;
+    }
+  }
+  @media (min-width: 1100px) and (max-width: 1330px) {
+    .GameplayGrid {
+      grid-template-columns: repeat(10, 94px);
+      grid-template-areas:
+        ". . . . . . . . . ."
+        "g g g g g g g g g g"
+        "g g g g g g g g g g"
+        "g g g g g g g g g g"
+        "g g g g g g g g g g"
+        "g g g g g g g g g g"
+        "g g g g g g g g g g"
+        ". . . a2 a2 a2 a2 a2 a2 a2"
+        "d d d d d d d d d d"
+        "d d d d d d d d d d"
+        ". . . . . . . . . ."
+        ". . . . . . . . . .";
+    }
+  }
+  @media (max-width: 1330px) {
+    .a0,
+    .a1,
+    .game0,
+    .game1 {
+      grid-area: auto;
+    }
+  }
+  @media (min-width: 880px) and (max-width: 1100px) {
+    .GameplayGrid {
+      grid-template-columns: repeat(8, 94px);
+      grid-template-areas:
+        ". . . . . . . ."
+        "g g g g g g g g"
+        "g g g g g g g g"
+        "g g g g g g g g"
+        "g g g g g g g g"
+        "g g g g g g g g"
+        "g g g g g g g g"
+        ". . . a2 a2 a2 a2 a2"
+        "d d d d d d d d"
+        "d d d d d d d d"
+        ". . . . . . . ."
+        ". . . . . . . .";
+    }
+  }
+  @media (min-width: 640px) and (max-width: 880px) {
+    .GameplayGrid {
+      grid-template-columns: repeat(6, 94px);
+      grid-template-rows: repeat(7, 94px);
+      grid-template-areas:
+        ". . . . . ."
+        "g g g g g g"
+        "g g g g g g"
+        "g g g g g g"
+        "g g g g g g"
+        ". . a2 a2 a2 a2"
+        "d d d d d d"
+        "d d d d d d"
+        ". . . . . ."
+        ". . . . . .";
+    }
+  }
+
+  @media (max-width: 640px) {
+    .GameplayGrid {
+      grid-template-columns: repeat(3, 94px);
+      grid-template-rows: repeat(5, 94px);
+      grid-template-areas:
+        ". . ."
+        "g g g"
+        "g g g"
+        "g g g"
+        "a2 a2 a2"
+        "d d d";
+    }
+  }
+}
